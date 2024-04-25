@@ -6,4 +6,5 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 @RepositoryRestResource(path = "quyen")
 public interface QuyenRepository extends JpaRepository<Quyen, Integer> {
+    public Quyen findByTenQuyen(String tenQuyen);
 }
